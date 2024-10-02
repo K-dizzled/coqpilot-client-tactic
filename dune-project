@@ -17,11 +17,15 @@ It uses Large Language Models to generate multiple potential proofs and then aut
   (sites (share plugins))
   (license MIT)
   (depends
-    (ocaml (>= 4.13.1))
+    (ocaml (>= 4.14.0))
     dune
     (dune-site (>= 2.9.1))
     (opam-client (>= 2.1.0))
     (cmdliner (>= 1.1.0))
     (coq (and (>= 8.19.0)))
     conf-git
+    cohttp
+    cohttp-lwt-unix
+    cohttp-async
+    lwt_ssl
     (bos (>= 0.2.1))))

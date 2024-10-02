@@ -4,8 +4,12 @@ DECLARE PLUGIN "coqpilot.tactics-plugin"
   open Pp
 }
 
-VERNAC COMMAND EXTEND CallToC CLASSIFIED AS QUERY
-| [ "Hello" ] -> { 
-    Feedback.msg_notice (str Message.message)
+VERNAC COMMAND EXTEND joke CLASSIFIED AS QUERY
+| [ "Joke" ] -> { 
+    match Get_random_joke.get_random_joke () with 
+    | Ok joke -> 
+        Feedback.msg_notice (str joke)
+    | Error msg ->
+        Feedback.msg_warning (str msg)    
   }
 END

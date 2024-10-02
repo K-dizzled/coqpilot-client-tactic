@@ -4,6 +4,11 @@
 
 (generate_opam_files true)
 
+(source (github K-dizzled/coqpilot-client-tactic))
+(homepage "https://github.com/K-dizzled/coqpilot-client-tactic")
+(authors "Andrei Kozyrev <kozyrev.andrei.a@gmail.com>")
+(maintainers "Andrei Kozyrev <kozyrev.andrei.a@gmail.com>")
+
 (package
   (name coqpilot)
   (synopsis "Todo")

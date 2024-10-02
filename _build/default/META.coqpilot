@@ -1,9 +1,0 @@
-package "tactics-plugin" (
-  directory = "tactics-plugin"
-  description = "CoqPilot"
-  requires = "coq-core.plugins.ltac coq-core.vernac threads.posix"
-  archive(byte) = "coqpilot_client_plugin.cma"
-  archive(native) = "coqpilot_client_plugin.cmxa"
-  plugin(byte) = "coqpilot_client_plugin.cma"
-  plugin(native) = "coqpilot_client_plugin.cmxs"
-)

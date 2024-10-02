@@ -2,7 +2,11 @@
 opam-version: "2.0"
 synopsis: "Todo"
 description: "Todo"
+maintainer: ["Andrei Kozyrev <kozyrev.andrei.a@gmail.com>"]
+authors: ["Andrei Kozyrev <kozyrev.andrei.a@gmail.com>"]
 license: "MIT"
+homepage: "https://github.com/K-dizzled/coqpilot-client-tactic"
+bug-reports: "https://github.com/K-dizzled/coqpilot-client-tactic/issues"
 depends: [
   "ocaml" {>= "4.13.1"}
   "dune" {>= "3.8"}
@@ -28,3 +32,4 @@ build: [
     "@doc" {with-doc}
   ]
 ]
+dev-repo: "git+https://github.com/K-dizzled/coqpilot-client-tactic.git"

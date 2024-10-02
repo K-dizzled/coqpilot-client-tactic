@@ -6,13 +6,14 @@
 
 (source (github K-dizzled/coqpilot-client-tactic))
 (homepage "https://github.com/K-dizzled/coqpilot-client-tactic")
-(authors "Andrei Kozyrev <kozyrev.andrei.a@gmail.com>")
+(authors "CoqPilot Team @ JetBrains Research")
 (maintainers "Andrei Kozyrev <kozyrev.andrei.a@gmail.com>")
 
 (package
   (name coqpilot)
-  (synopsis "Todo")
-  (description "Todo")
+  (synopsis "CoqPilot: A proof generation plugin for Coq")
+  (description "CoqPilot is a plugin that is designed to help automate writing of Coq proofs.
+It uses Large Language Models to generate multiple potential proofs and then automatically typechecks them.")
   (sites (share plugins))
   (license MIT)
   (depends

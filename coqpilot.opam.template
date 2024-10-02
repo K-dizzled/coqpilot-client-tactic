@@ -1,6 +1,3 @@
-post-messages: ["
---- CoqPilot successfully installed ---
-" {success}]
 tags: [
     "category:Coq Extensions"
     "keyword:Coq Tactic"

@@ -1,1 +1,1 @@
-From Coqpilot Require Export Tactics.Exported.
+Declare ML Module "coqpilot_client_plugin:coqpilot.tactics-plugin".

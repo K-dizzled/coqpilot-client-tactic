@@ -1,0 +1,17 @@
+# Aux Coq files
+**/*.glob
+**/*.vo
+**/*.vok
+**/*.vos
+**/*.aux
+
+# Merlin configuring file
+.merlin
+
+# Dune generated files
+*.install
+_build/
+
+# Local OPAM switch
+_opam/
+opam

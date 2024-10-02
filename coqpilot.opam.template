@@ -1,0 +1,9 @@
+post-messages: ["
+--- CoqPilot successfully installed ---
+" {success}]
+tags: [
+    "category:Coq Extensions"
+    "keyword:Coq Tactic"
+    "keyword:Proof Automation"
+    "logpath:Coqpilot"
+]

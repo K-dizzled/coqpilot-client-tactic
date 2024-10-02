@@ -1,0 +1,8 @@
+(library
+ (name coqpilot_client_plugin)
+ (public_name coqpilot.tactics-plugin)
+ (synopsis "CoqPilot")
+ (flags :standard -rectypes -w -27 -warn-error -A)
+ (libraries coq-core.vernac threads.posix coq-core.plugins.ltac))
+
+(coq.pp (modules coqpilot_tactics))

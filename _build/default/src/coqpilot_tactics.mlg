@@ -1,0 +1,11 @@
+DECLARE PLUGIN "coqpilot.tactics-plugin"
+
+{
+  open Pp
+}
+
+VERNAC COMMAND EXTEND CallToC CLASSIFIED AS QUERY
+| [ "Hello" ] -> { 
+    Feedback.msg_notice (str Message.message)
+  }
+END

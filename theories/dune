@@ -1,0 +1,9 @@
+(coq.theory
+ (name Coqpilot)
+ (package coqpilot)
+ (flags -q -noinit)
+ (plugins
+   coqpilot.tactics-plugin
+ )
+)
+(include_subdirs qualified)

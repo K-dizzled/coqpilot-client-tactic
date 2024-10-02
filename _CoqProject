@@ -1,0 +1,4 @@
+-R _build/default/theories/ MyPlugin
+-I _build/default/src
+
+_build/default/theories/Loader.v

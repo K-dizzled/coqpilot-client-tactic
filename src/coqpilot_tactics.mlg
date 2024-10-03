@@ -6,10 +6,20 @@ DECLARE PLUGIN "coqpilot.tactics-plugin"
 
 VERNAC COMMAND EXTEND joke CLASSIFIED AS QUERY
 | [ "Joke" ] -> { 
-    match Get_random_joke.get_random_joke () with 
+    match Api.get_random_joke () with 
     | Ok joke -> 
         Feedback.msg_notice (str joke)
     | Error msg ->
         Feedback.msg_warning (str msg)    
+  }
+END
+
+VERNAC COMMAND EXTEND start_server CLASSIFIED AS QUERY
+| [ "Server" ] -> { 
+    match Api.retrieve_text_from_server () with
+    | Ok text ->
+        Feedback.msg_notice (str ("Received text from server: " ^ text))
+    | Error msg ->
+        Feedback.msg_warning (str ("Error occured: " ^ msg))
   }
 END

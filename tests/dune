@@ -2,6 +2,7 @@
  (name CoqPilotTests)
  (flags -q)
  (theories Coqpilot))
+
 (alias
  (name runtest)
  (package coqpilot)

@@ -3,6 +3,13 @@
  (public_name coqpilot.tactics-plugin)
  (synopsis "CoqPilot")
  (flags :standard -rectypes -w -27 -warn-error -A)
- (libraries coq-core.vernac threads.posix coq-core.plugins.ltac cohttp-lwt-unix yojson))
+ (libraries 
+  coq-core.vernac 
+  threads.posix 
+  coq-core.plugins.ltac 
+  cohttp-lwt-unix
+  yojson
+  conduit-lwt
+ ))
 
 (coq.pp (modules coqpilot_tactics))
